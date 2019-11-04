@@ -12,6 +12,15 @@ if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Windows") {
   mljcode <- "C:/Users/brian/Dropbox/mlb/sim/scripts_r/legacy_files"
 }
 
+if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Linux") {
+  # For Brian
+  constants <- "/home/brian/Dropbox/mlb/sim/factors/legacy"
+  output <- paste("/home/brian/Dropbox/mlb/sim/outputs/legacy/", year)
+  gamefiles <- paste("/home/brian/Dropbox/mlb/sim/daily_projections/" ,year)
+  gamedates <- "/home/brian/Dropbox/mlb/sim/factors/legacy"
+  ModelLocation <- "/home/brian/Dropbox/mlb/sim"
+  mljcode <- "/home/brian/Dropbox/mlb/sim/scripts_r/legacy_files"
+}
 
 
 library(devtools)
