@@ -30,7 +30,7 @@ if (Sys.info()["user"] == "elopez") {
   ModelLocation <- "C:/elopez/Dropbox/Sim/Model/"
   mljcode <- "C:/elopez/Dropbox/Sim/"
 }
-
+print('test')
 if (Sys.info ()["user"] == "jenkins") {
   # For Apple Sim Box
   constants <- "/Volumes/Mac_HD/Dropbox/Sim/Constants/"
