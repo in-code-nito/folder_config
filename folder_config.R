@@ -25,8 +25,8 @@ if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Linux") {
 if (Sys.info()["user"] == "mlopez1") {
   # For Mike L
   constants <- "~/Dropbox/mlb/sim/factors/legacy/"
-  output <- "~/Dropbox/mlb/sim/outputs/legacy/", year,"/", sep = '')
-  gamefiles <- "~/Dropbox/mlb/sim/daily_projections/" ,year,"/", sep = '')
+  output <- paste("~/Dropbox/mlb/sim/outputs/legacy/", year,"/", sep = '')
+  gamefiles <- paste("~/Dropbox/mlb/sim/daily_projections/" ,year,"/", sep = '')
   gamedates <- "~/Dropbox/mlb/sim/factors/legacy/"
   ModelLocation <- "~/Dropbox/mlb/sim/"
   mljcode <- "~/Dropbox/mlb/sim/scripts_r/legacy_files/prod/"
