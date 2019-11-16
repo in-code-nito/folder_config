@@ -2,12 +2,12 @@
 
 if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Windows") {
   # For Brian laptop
-  constants <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy/"
-  output <- paste("C:/Users/brian/Dropbox/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"),"/", sep = '')
-  gamefiles <- paste("C:/Users/brian/Dropbox/mlb/sim/daily_projections/" ,format(Sys.time(), "%Y"),"/", sep = '')
-  gamedates <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy/"
-  ModelLocation <- "C:/Users/brian/Dropbox/mlb/sim/"
-  mljcode <- "C:/Users/brian/Dropbox/mlb/sim/scripts_r/legacy_files/prod/"
+  constants <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy"
+  output <- paste("C:/Users/brian/Dropbox/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"), sep = '')
+  gamefiles <- paste("C:/Users/brian/Dropbox/mlb/sim/daily_projections/" ,format(Sys.time(), "%Y"), sep = '')
+  gamedates <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy"
+  ModelLocation <- "C:/Users/brian/Dropbox/mlb/sim"
+  mljcode <- "C:/Users/brian/Dropbox/mlb/sim/scripts_r/legacy_files/prod"
 }
 
 if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Linux") {
