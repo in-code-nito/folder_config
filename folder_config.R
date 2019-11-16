@@ -7,7 +7,7 @@ if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Windows") {
   gamefiles <- paste("C:/Users/brian/Dropbox/mlb/sim/daily_projections/" ,format(Sys.time(), "%Y"), sep = '')
   gamedates <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy"
   ModelLocation <- "C:/Users/brian/Dropbox/mlb/sim"
-  mljcode <- "C:/Users/brian/Dropbox/mlb/sim/scripts_r/legacy_files/prod"
+  mljcode <- "C:/Users/brian/Dropbox/mlb/sim/scripts_r/legacy/prod"
 }
 
 if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Linux") {
@@ -17,7 +17,7 @@ if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Linux") {
   gamefiles <- paste("/home/brian/Dropbox/mlb/sim/daily_projections/" ,format(Sys.time(), "%Y"),"/", sep = '')
   gamedates <- "/home/brian/Dropbox/mlb/sim/factors/legacy/"
   ModelLocation <- "/home/brian/Dropbox/mlb/sim/"
-  mljcode <- "/home/brian/Dropbox/mlb/sim/scripts_r/legacy_files/prod/"
+  mljcode <- "/home/brian/Dropbox/mlb/sim/scripts_r/legacy/prod/"
 }
 
 if (Sys.info()["user"] == "mlopez1") {
@@ -27,7 +27,7 @@ if (Sys.info()["user"] == "mlopez1") {
   gamefiles <- paste("~/Dropbox/mlb/sim/daily_projections/" ,format(Sys.time(), "%Y"),"/", sep = '')
   gamedates <- "~/Dropbox/mlb/sim/factors/legacy/"
   ModelLocation <- "~/Dropbox/mlb/sim/"
-  mljcode <- "~/Dropbox/mlb/sim/scripts_r/legacy_files/prod/"
+  mljcode <- "~/Dropbox/mlb/sim/scripts_r/legacy/prod/"
 }
 
 
