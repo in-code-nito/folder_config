@@ -1,7 +1,5 @@
 # local configuration hack
 
-year <- paste(format(Sys.time(), "%Y"))
-
 if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Windows") {
   # For Brian laptop
   constants <- "C:/Users/brian/Dropbox/mlb/sim/factors/legacy/"
