@@ -30,6 +30,17 @@ if (Sys.info()["user"] == "mlopez1") {
   mljcode <- "~/Dropbox/mlb/sim/scripts_r/legacy/prod/"
 }
 
+if (Sys.info ()["user"] == "root" & Sys.info()['sysname'] =="Linux") {
+  # For Brian Tower
+constants <- "/mlb/mlb/sim/factors/legacy"
+output <- paste("/mlb/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"),"/", sep = '')
+gamefiles <- paste("/mlb/mlb/sim/daily_projections/legacy/" ,format(Sys.time(), "%Y"),"/", sep = '')
+gamedates <- "/mlb/mlb/sim/factors/legacy/"
+ModelLocation <- "/mlb/mlb/sim/"
+mljcode <- "/mlb/mlb/sim/scripts_r/legacy/prod/"
+}
+
+
 
 library(devtools)
 library(dplyr)
