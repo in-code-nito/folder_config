@@ -52,12 +52,12 @@ if (Sys.info ()["user"] == "msterling" & Sys.info()['sysname'] =="Linux") {
 
 if (Sys.info ()["user"] == "airflow" & Sys.info()['sysname'] =="Linux") {
     # For msterling
-    constants <- "/Users/airflow/Dropbox/mlb/sim/factors/legacy/"
-    output <- paste("/Users/airflow/Dropbox/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"),"/", sep = '')
-    gamefiles <- paste("/Users/airflow/Dropbox/mlb/sim/daily_projections/legacy/" ,format(Sys.time(), "%Y"),"/", sep = '')
-    gamedates <- "/Users/airflow/Dropbox/mlb/sim/factors/legacy/"
-    ModelLocation <- "/Users/airflow/Dropbox/mlb/sim/"
-    mljcode <- "/Users/airflow/Dropbox/mlb/sim/scripts_r/legacy/prod/"
+    constants <- "/mlb/mlb/sim/factors/legacy/"
+    output <- paste("/mlb/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"),"/", sep = '')
+    gamefiles <- paste("/mlb/mlb/sim/daily_projections/legacy/" ,format(Sys.time(), "%Y"),"/", sep = '')
+    gamedates <- "/mlb/mlb/sim/factors/legacy/"
+    ModelLocation <- "/mlb/mlb/sim/"
+    mljcode <- "/mlb/mlb/sim/scripts_r/legacy/prod/"
 }
 
 library(devtools)
