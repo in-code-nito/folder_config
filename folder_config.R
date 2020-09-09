@@ -60,7 +60,7 @@ if (Sys.info ()["user"] == "airflow" & Sys.info()['sysname'] =="Linux") {
     mljcode <- "/mlb/mlb/sim/scripts_r/legacy/prod/"
 }
 
-library(devtools)
+#library(devtools)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
