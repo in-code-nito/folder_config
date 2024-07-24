@@ -1,3 +1,4 @@
+rm(list=ls())
 # local configuration hack
 
 if (Sys.info ()["user"] == "brian" & Sys.info()['sysname'] =="Windows") {
@@ -60,7 +61,17 @@ if (Sys.info ()["user"] == "airflow" & Sys.info()['sysname'] =="Linux") {
     mljcode <- "/mlb/mlb/sim/scripts_r/legacy/prod/"
 }
 
-library(devtools)
+if (Sys.info ()["user"] == "docker" & Sys.info()['sysname'] =="Linux") {
+  # For msterling
+  constants <- "/mlb/mlb/sim/factors/legacy/"
+  output <- paste("/mlb/mlb/sim/outputs/legacy/", format(Sys.time(), "%Y"),"/", sep = '')
+  gamefiles <- paste("/mlb/mlb/sim/daily_projections/legacy/" ,format(Sys.time(), "%Y"),"/", sep = '')
+  gamedates <- "/mlb/mlb/sim/factors/legacy/"
+  ModelLocation <- "/mlb/mlb/sim/"
+  mljcode <- "/mlb/mlb/sim/scripts_r/legacy/prod/"
+}
+
+#library(devtools)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -81,6 +92,13 @@ library(ggrepel)
 library(broom)
 library(RSQLite)
 library(etl)
-# library(baseballr)
+library(baseballr)
 library(zoo)
+library(mgcv)
+library(parallel)
+library(stringr)
+library(tidyverse)
+library(lme4)
+library(data.table)
+library(vroom)
 Sys.setenv(TZ='EST')
